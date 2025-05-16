@@ -20,10 +20,10 @@ allow_origins = ["*"]
 
 [features]
 # Process and display HTML in messages. This can be a security risk (see https://stackoverflow.com/questions/19603097/why-is-it-dangerous-to-render-user-generated-html-or-javascript)
-unsafe_allow_html = false
+unsafe_allow_html = true
 
 # Process and display mathematical expressions. This can clash with "$" characters in messages.
-latex = false
+latex = true
 
 # Automatically tag threads with the current chat profile (if a chat profile is used)
 auto_tag_thread = true
