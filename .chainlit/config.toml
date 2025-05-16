@@ -28,6 +28,19 @@ latex = true
 # Automatically tag threads with the current chat profile (if a chat profile is used)
 auto_tag_thread = true
 
+[UI]
+# Show the header elements
+show_header = true
+
+# Place elements in header on the right side
+default_expand_messages = true
+
+# Name displayed in the top bar
+name = "Probability Assistant"
+
+# Description displayed in the side panel
+description = "A helpful assistant for probability concepts"
+
 # Allow users to edit their own messages
 edit_message = true
 
