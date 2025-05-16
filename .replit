@@ -13,3 +13,19 @@ requiredFiles = [".replit", "replit.nix"]
 [deployment]
 run = ["python3", "main.py"]
 deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[workflows]
+runButton = "Run Chainlit"
+
+[[workflows.workflow]]
+name = "Run Chainlit"
+author = 42766240
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "chainlit run main.py --host 0.0.0.0 --port 5000"
